@@ -10,7 +10,23 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+# Collections configuration
 collections:
-  journal:
+  papers:
     output: true
-    permalink: /journal/:name
+    permalink: /papers/:path/
+  submissions:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "submissions"
+    values:
+      layout: "default"
