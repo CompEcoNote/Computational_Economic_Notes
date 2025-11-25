@@ -27,7 +27,7 @@ layout: default
 
 Computational Economic Notes is dedicated to publishing high-quality research that combines economic theory with computational methods.
 
-[View submission guidelines →](submissions.html)
+[View submission guidelines →](submission.html)
 
 ---
 
