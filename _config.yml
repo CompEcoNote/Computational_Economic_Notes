@@ -1,19 +1,12 @@
 title: "Computational Economic Notes"
-email: zedtaha@gmail.com
-description: "An open-access journal for economic research and computing"
+email: "zedtaha@gmail.com"
+description: "An open-access journal for computational economics research"
 baseurl: "/Computational-Economic-Notes"
 url: "https://compeconote.github.io"
 
+# Simple Jekyll settings
 theme: minima
 markdown: kramdown
-
 permalink: pretty
 
-# Build settings
-safe: true
-include:
-  - _pages
-exclude:
-  - .github
-  - Gemfile
-  - Gemfile.lock
+# No collections, no plugins - keep it simple
