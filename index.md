@@ -7,27 +7,25 @@ layout: default
 
 **An open-access, peer-reviewed journal** publishing research at the intersection of economics and computational methods.
 
-## Quick Navigation
+## 📖 Quick Navigation
 
+- [**About the Journal**](about.html)
+- [**Editorial Board**](editorial-board.html)  
+- [**Submission Guidelines**](submissions.html)
+- [**Latest Papers**](papers/2025/paper-001/)
 
-- [About](about.html)
-- [Editorial Board](editorial-board.html)  
-- [Submission Guidelines](submission.html)
-- [Latest Papers](papers/2025/paper-001/)
-
-
-## Latest Publications
+## 🚀 Featured Publication
 
 ### 2025
-- **[Paper 001: Example Title](papers/2025/paper-001/)**
-  - Authors: A. Author, B. Contributor
-  - [Read Paper](papers/2025/paper-001/paper.html)
+- **[Paper 001: An Example Paper](papers/2025/paper-001/)**
+  - *Authors: Jane Doe, John Smith*
+  - [Read Abstract](papers/2025/paper-001/) | [Full Paper](papers/2025/paper-001/paper.html)
 
-## About This Journal
+## 📝 Submit Your Research
 
-Computational Economic Notes is dedicated to publishing high-quality research that combines economic theory with computational methods.
+We welcome submissions in computational economics, economic simulation, and reproducible research.
 
-[View submission guidelines →](submission.html)
+**[View submission guidelines →](submissions.html)**
 
 ---
 
