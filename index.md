@@ -14,6 +14,7 @@ layout: default
 ## How to submit
 
 See [Submission Guidelines](/Computational-Economic-Notes/pages/submissions).
+
 See [Templates](/Computational-Economic-Notes/paper-temple).
 
 ## Editorial Board
