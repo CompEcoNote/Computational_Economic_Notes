@@ -1,6 +1,7 @@
 ---
 title: "Editorial Board" 
 layout: default
+permalink: /submission.html
 ---
 
 # Editorial Board
@@ -8,4 +9,4 @@ layout: default
 - **Editor-in-Chief**: Taha Zaghdoudi
 - **Email**: zedtaha@gmail.com
 
-[Back to Home](index.html)
+[Back to Home](/)
