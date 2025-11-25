@@ -1,14 +1,12 @@
 title: "Computational Economic Notes"
 email: zedtaha@gmail.com
 description: "A scientific journal website"
-baseurl: "/Computational-Economic-Notes"
+baseurl: ""  # Change this to empty
 url: "https://compeconote.github.io"
 
-theme: minima
+theme: jekyll-theme-minimal  # Use a supported theme
 
 markdown: kramdown
-plugins:
-  - jekyll-feed
 
 # Collections configuration
 collections:
