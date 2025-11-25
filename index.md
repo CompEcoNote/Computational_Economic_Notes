@@ -9,10 +9,10 @@ layout: default
 
 ## Quick Navigation
 
-- [About the Journal](about.html)
-- [Editorial Board](editorial-board.html)  
-- [Submission Guidelines](submission.html)
-- [Latest Papers](papers/)
+- [About the Journal](/about.html)
+- [Editorial Board](/editorial-board.html)  
+- [Submission Guidelines](/submission.html)
+- [Latest Papers](/papers/)
 
 ## Latest Publications
 
