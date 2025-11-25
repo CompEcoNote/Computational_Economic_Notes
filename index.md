@@ -9,10 +9,12 @@ layout: default
 
 ## Quick Navigation
 
-- [About the Journal](/about.html)
-- [Editorial Board](/editorial-board.html)  
-- [Submission Guidelines](/submission.html)
-- [Latest Papers](/papers/)
+
+- [About](about.html)
+- [Editorial Board](editorial-board.html)  
+- [Submission Guidelines](submissions.html)
+- [Latest Papers](papers/2025/paper-001/)
+
 
 ## Latest Publications
 
@@ -25,7 +27,7 @@ layout: default
 
 Computational Economic Notes is dedicated to publishing high-quality research that combines economic theory with computational methods.
 
-[Learn more about our mission →](about.html)
+[View submission guidelines →](submissions.html)
 
 ---
 
