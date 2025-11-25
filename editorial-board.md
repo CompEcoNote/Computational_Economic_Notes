@@ -9,8 +9,8 @@ permalink: /editorial-board.html
 ## Editor-in-Chief
 
 **Taha Zaghdoudi**  
-📧 zedtaha@gmail.com  
-🔗 [GitHub](https://github.com/tahazaghdoudi)
+ zedtaha@gmail.com  
+ [GitHub](https://github.com/tahazaghdoudi)
 
 ## Join Our Team
 
