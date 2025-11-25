@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Computational Economic Notes"
 layout: default
 ---
 
