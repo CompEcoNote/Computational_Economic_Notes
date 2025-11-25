@@ -8,9 +8,9 @@ layout: default
 **Authors:** A. Author, B. Contributor
 
 **Abstract:**
-This is an example paper demonstrating the format for Computational Economic Notes. It shows how to structure research papers for publication in this journal.
+This is an example paper demonstrating the format for Computational Economic Notes.
 
-**Download:** [PDF](paper.pdf)
+[Read the full paper](paper.html)
 
 **Citation (BibTeX):**
 ```bibtex
