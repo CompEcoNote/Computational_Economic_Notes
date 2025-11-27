@@ -13,10 +13,7 @@ permalink: /submission/
 ## Submission Guidelines
 
 ### What We Publish
-- Research notes (2000-5000 words)
-- Methodology papers  
-- Application case studies
-- Software/tool introductions
+- Research notes (max 2500 words)
 
 ### Requirements
 - Open source code (GitHub repository)
