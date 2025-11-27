@@ -1,0 +1,62 @@
+name: Validate Submission Format
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'submission')
+    steps:
+      - name: Validate submission
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body;
+            
+            const validations = {
+              hasTitle: body.includes('Paper Title') && body.split('Paper Title')[1]?.length > 10,
+              hasAuthors: body.includes('Author(s)') && body.split('Author(s)')[1]?.length > 5,
+              hasAbstract: body.includes('Abstract') && body.split('Abstract')[1]?.length > 50,
+              hasCategory: body.includes('Category') && !body.includes('Category\n\n'),
+            };
+            
+            const missingFields = Object.entries(validations)
+              .filter(([_, isValid]) => !isValid)
+              .map(([field]) => field);
+            
+            if (missingFields.length > 0) {
+              const commentBody = `⚠️ **Submission Validation Check**\n\nMissing or incomplete fields:\n${missingFields.map(field => `- ${field.replace('has', '').replace(/([A-Z])/g, ' $1').trim()}`).join('\n')}\n\nPlease update your submission with all required information.`;
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: commentBody
+              });
+              
+              // Add validation failed label
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['validation:incomplete']
+              });
+            } else {
+              // Add validation passed label
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['validation:complete']
+              });
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: '✅ **Submission validated successfully!**\n\nYour submission has passed initial validation and will now proceed to editorial review.'
+              });
+            }
