@@ -33,9 +33,4 @@ permalink: submission.html
 
 ---
 
-### Alternative Submission Methods
-
-- **Pre-submission inquiry**: [Start a Discussion](https://github.com/CompEcoNote/Computational-Economic-Notes/discussions)
-- **Questions?**: Open an [Issue](https://github.com/CompEcoNote/Computational-Economic-Notes/issues)
-
 *All submissions are publicly visible and undergo open peer review.*
