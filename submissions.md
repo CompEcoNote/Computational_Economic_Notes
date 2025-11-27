@@ -7,6 +7,8 @@ permalink: submission.html
 # Submit to Computational Economic Notes
 
 ## Quick Submission
+[![Submit Paper](https://img.shields.io/badge/Submit-Paper-brightgreen.svg)](https://github.com/CompEcoNote/Computational-Economic-Notes/issues/new?template=submission.yml)
+[![View Submissions](https://img.shields.io/badge/View-Submissions-blue.svg)](https://github.com/CompEcoNote/Computational-Economic-Notes/issues?q=is%3Aopen+is%3Aissue+label%3Asubmission)
 
 [**Submit Paper via GitHub**](https://github.com/CompEcoNote/Computational-Economic-Notes/issues/new?template=submission.yml)
 
