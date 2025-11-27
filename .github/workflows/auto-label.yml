@@ -1,0 +1,46 @@
+name: Auto-label Submissions
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  label-submissions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label submissions
+        uses: actions/github-script@v6
+        with:
+          script: |
+            if (context.payload.issue.labels.find(label => label.name === 'submission')) {
+              // Add appropriate labels based on content
+              const issue = context.payload.issue;
+              const title = issue.title.toLowerCase();
+              const body = issue.body.toLowerCase();
+              
+              const labelsToAdd = ['submission-review'];
+              
+              // Categorize by content
+              if (title.includes('[submission]') || body.includes('research note')) {
+                labelsToAdd.push('research-note');
+              }
+              if (body.includes('methodology')) {
+                labelsToAdd.push('methodology');
+              }
+              if (body.includes('application') || body.includes('case study')) {
+                labelsToAdd.push('application');
+              }
+              if (body.includes('review') || body.includes('survey')) {
+                labelsToAdd.push('review');
+              }
+              
+              // Add status label
+              labelsToAdd.push('status:pending-review');
+              
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: labelsToAdd
+              });
+            }
