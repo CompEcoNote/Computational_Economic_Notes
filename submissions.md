@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Submit Your Paper
-permalink: submission.html
+permalink: /submissions.html
 ---
 
 # Submit to Computational Economic Notes
